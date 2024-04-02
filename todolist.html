@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="todo-container">
+        <div class="box">
+            <h1>TO DO</h1>
+            <div id="inputField">
+                <input type="text" id="todoInput" placeholder="ADD YOUR PLAN" onkeydown="keyCodeCheck()">
+                <button type="button" id="addBtn">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <ul id="todoList">
+
+            </ul>
+            <div class="delete-btn-wrap">
+                <button onclick="deleteAll();">전체 삭제</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./todolist.js"></script>
+</body>
+
+</html>
